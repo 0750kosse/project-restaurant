@@ -4,8 +4,8 @@ class Orders extends React.Component {
   render() {
   const { order, totalOrder, deleteItem, title } = this.props; 
     return (
-      <div>
-        <h3>Your order is : </h3>
+      <div className="orders">
+        <h1 className="orders__title">Your order is : </h1>
         {order.map(function(orderItem) {
           return (
             <div key={orderItem.id}>
@@ -20,8 +20,8 @@ class Orders extends React.Component {
             </div>
           )
         })}
-        <h3>Your total is : </h3>
-        <div>{totalOrder}</div>
+        <h1>Your total is : </h1>
+        <p className="orders__totalOrder">{totalOrder}</p>
       </div>
     );
   }

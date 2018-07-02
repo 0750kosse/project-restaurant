@@ -68,23 +68,27 @@ class App extends React.Component {
     return (
       <div className="appContent">
         <Header name="Rubber Duck´s and Co Brasserie" />
-        <MenuItem 
-          item={this.state.menu} 
-          clickHandler={this.handleSubmit} 
-          title="Menu list"
-        />
-        <MenuItem 
-          item={this.state.drinksMenu} 
-          clickHandler={this.handleSubmit} 
-          title="Beer list"
-        />
-        <Location location={this.state.location} />
+        <div className="menusDiv">
+          <MenuItem 
+            className="menuItem_food" 
+            item={this.state.menu} 
+            clickHandler={this.handleSubmit} 
+            title="Menu list"
+          />
+          <MenuItem 
+            className="menuItem_drinks" 
+            item={this.state.drinksMenu} 
+            clickHandler={this.handleSubmit} 
+            title="Beer list"
+          />
+        </div>
         <Orders 
           order={this.state.order} 
           totalOrder={this.state.totalOrder}
           deleteItem={this.handleDelete}
           title="Delete Item"
         />
+        <Location location={this.state.location} />
         
       </div>
     );

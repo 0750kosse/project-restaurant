@@ -1,0 +1,56 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  background-color: whitesmoke;
+  font-family: 'Shadows Into Light';
+  letter-spacing:2px;
+}
+
+.appContent {
+  display: flex;
+  flex-direction: column;
+}
+
+/***** HEADER ******/
+
+.header, .menuItemFood, .orders, h1 > .orders__title, .orders__totalOrder, .location {
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+/***** MENUS ******/
+
+.menusDiv {
+ display: flex;
+}
+
+.menuItemFood {
+  
+  
+  border:2px solid black;
+  border-radius:15px;
+  width: 40%;
+  margin:0 5%;
+}
+
+.menuItemFood > p {
+  background: red;
+  /*might need to remove to go flex ?*/
+  display: block;
+  padding:5%;
+  margin:0 0 5%;
+  border-radius:15px;
+}
+
+.menuItem_drinks {
+  margin:0 5%;
+}
+
+/***** ORDERS ******/
+
+
+/***** LOCATIONS ******/
